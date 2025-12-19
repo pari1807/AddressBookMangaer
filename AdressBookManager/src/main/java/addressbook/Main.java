@@ -1,9 +1,28 @@
 package addressbook;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
+import javax.swing.SwingWorker;
+import javax.swing.Timer;
+import javax.swing.UIManager;
 
 /**
  * Main Entry Point with Login Authentication
@@ -35,7 +54,7 @@ public class Main extends JFrame {
         
         // Title panel
         JPanel titlePanel = new JPanel();
-        titlePanel.setBackground(new Color(0, 123, 255));
+        titlePanel.setBackground(new Color(0, 133, 255));
         JLabel titleLabel = new JLabel("Address Book Management System");
         titleLabel.setFont(new Font("Arial", Font.BOLD, 18));
         titleLabel.setForeground(Color.WHITE);
